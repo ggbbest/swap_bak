@@ -1,5 +1,18 @@
 /**
  *Submitted for verification at Etherscan.io on 2020-09-11
+ * 
+https://etherscan.io/address/0x6aba3e56aeb3b95ad64161103d793fac5f6ce4f7#code
+ * 000000000000000000000000a0b73e1ff0b80914ab6fe0444e65848c4c34450b0000000000000000000000000000000000000000000000000000000001e187e0
+
+-----Decoded View---------------
+Arg [0] : _stakingToken (address): 0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b
+Arg [1] : _lockInDuration (uint256): 31557600
+
+-----Encoded View---------------
+2 Constructor Arguments found :
+Arg [0] : 000000000000000000000000a0b73e1ff0b80914ab6fe0444e65848c4c34450b
+Arg [1] : 0000000000000000000000000000000000000000000000000000000001e187e0
+
 */
 
 // File: openzeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol

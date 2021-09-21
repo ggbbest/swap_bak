@@ -1,5 +1,31 @@
 /**
  *Submitted for verification at Etherscan.io on 2018-11-20
+ * CRO_TOKEN_ADDRESS = "0xA0b73E1Ff0B80914AB6fe0444E65848C4C34450b"
+https://etherscan.io/address/0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b#code
+
+Arg [0] : _name (string): C4EI SWAP
+Arg [1] : _symbol (string): CEI
+Arg [2] : _initialSupply (uint256): 10000000000000000000
+Arg [3] : _decimals (uint8): 8
+Arg [4] : _mintable (bool): False
+Arg [5] : _secondarySaleReserveWallet (address):			0xEb0e79C43fc3F7926F14e79D69cE8c72f1437094
+Arg [6] : _mainNetLaunchIncentiveReserveWallet (address):	0x6F94352Cd4d0AfdAC617255098979343769360E4
+Arg [7] : _capitalReserveWallet (address):					0x09AEd6933A313864A8B6ec3F2E82C885E3258E92
+Arg [8] : _ecosystemGrantsReserveWallet (address):			0x493D1882318bCF86647930C42B8bb203945F2b36
+Arg [9] : _airdropReserveWallet (address):					0xa0Bc8A3c82282dBaA71dbfc9fe37cE24bd24691F
+
+ * -----Decoded View---------------
+Arg [0] : _name (string): CRO
+Arg [1] : _symbol (string): CRO
+Arg [2] : _initialSupply (uint256): 10000000000000000000
+Arg [3] : _decimals (uint8): 8
+Arg [4] : _mintable (bool): False
+Arg [5] : _secondarySaleReserveWallet (address): 0x35f517cab9a37bc31091c2f155d965af84e0bc85
+Arg [6] : _mainNetLaunchIncentiveReserveWallet (address): 0x71507ee19cbc0c87ff2b5e05d161efe2aac4ee07
+Arg [7] : _capitalReserveWallet (address): 0x22e4f709fd5e7fe246fbf7e714ae89bdab7e2a5d
+Arg [8] : _ecosystemGrantsReserveWallet (address): 0xdda508f9f3c1b4ca39c8794df3a080298ebe9c55
+Arg [9] : _airdropReserveWallet (address): 0x67703f7d089f3ac7c8c13a18b2381cbd7ee3eded
+
 */
 
 pragma solidity ^0.4.13;

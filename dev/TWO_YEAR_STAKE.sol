@@ -1,5 +1,7 @@
 /**
  *Submitted for verification at Etherscan.io on 2020-09-11
+https://etherscan.io/address/0x26388d599A677C6A8BCc4c113F0A34e6Ced9493D#code
+
 */
 
 // File: openzeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol
