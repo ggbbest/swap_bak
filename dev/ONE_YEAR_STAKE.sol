@@ -6,6 +6,7 @@ https://etherscan.io/address/0x6aba3e56aeb3b95ad64161103d793fac5f6ce4f7#code
 
 -----Decoded View---------------
 Arg [0] : _stakingToken (address): 0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b
+    --> 0x95CA62cB94a37bE3D4930e05D1F7f6A1Ee202B9F --> 로 변경 2021-09-22
 Arg [1] : _lockInDuration (uint256): 31557600
 
 -----Encoded View---------------

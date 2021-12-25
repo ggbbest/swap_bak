@@ -4,7 +4,7 @@
 
 As a new DeFi protocol, DeFi Swap is designed to be the best place to swap and farm DeFi coins at the best available rate, leveraging proven and audited protocols, while offering an outstanding incentive program powered by CRO.
 
-Please visit https://crypto.com/defi for more information!
+Please visit https://swap.c4ei.net/defi for more information!
 
 ## Submit a token request
 

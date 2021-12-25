@@ -2,7 +2,7 @@
  *Submitted for verification at Etherscan.io on 2018-11-20
  * CRO_TOKEN_ADDRESS = "0xA0b73E1Ff0B80914AB6fe0444E65848C4C34450b"
 https://etherscan.io/address/0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b#code
-
+--> 0x95CA62cB94a37bE3D4930e05D1F7f6A1Ee202B9F --> 로 변경 2021-09-22
 Arg [0] : _name (string): C4EI SWAP
 Arg [1] : _symbol (string): CEI
 Arg [2] : _initialSupply (uint256): 10000000000000000000

@@ -39,3 +39,5 @@ cypress/fixtures/example.json
 
 # parcel
 .cache
+.env
+dev/
