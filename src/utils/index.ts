@@ -27,7 +27,7 @@ const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
 }
 
 export function getEtherscanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
-  const prefix = ChainId ==21004 ? 'exp.c4ei.net' : `https://${ETHERSCAN_PREFIXES[chainId] || ETHERSCAN_PREFIXES[1]}etherscan.io`
+  const prefix = ChainId ==21004 ? 'https://exp.c4ei.net' : `https://${ETHERSCAN_PREFIXES[chainId] || ETHERSCAN_PREFIXES[1]}etherscan.io`
 
   switch (type) {
     case 'transaction': {

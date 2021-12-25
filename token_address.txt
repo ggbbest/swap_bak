@@ -1,0 +1,34 @@
+/home/dev/c4eiswap/token-lists/test/schema/c4ei.tokenlist.json
+--> .env 
+REACT_APP_CRYPTO_TOKEN_LIST_URL = "https://raw.githubusercontent.com/ggbbest/token-lists/main/test/schema/c4ei.tokenlist.json"
+
+
+21-10-26
+BCK 0x1d187BbeCeF8d7b1731339c301ab8354d4F0A50b
+
+21-12-10 : 1억개 , 소수점 18
+ROY 0x6FE9411E1E87cC52795482B6de00BD9CC0ceb034
+
+
+
+0x58a3f3237ac6dd279702f2ec02c36ab536ff08e1 BCW
+
+0x49f6f44f6af0e93be1598d7b1940c205f384b1b7	GGB ETH	GGB  18
+0x368aB5E3330746974a8e221F29ef8a71eC074242	GoodGameBe GGB 18 BINANCE_MAIN_ID
+0xF99aCcabD9121F9E584fBae833D84d25B5b97B6b	Citi	CITI	9	BINANCE_MAIN_ID
+0x0F3A4B199211b14Ed334F87Ef5acEA13Aba330A5	CitypayOrg	CTP	18	BINANCE_MAIN_ID
+
+ 
+
+https://gateway.pinata.cloud/ipfs/QmYLopsyGtm98E5WKc6QQnZxGe9pRg3dLbX8bE4At8SvML
+https://i.ibb.co/MkND7P1/citi32.png
+https://i.ibb.co/M80vcns/ggb32.png
+https://i.ibb.co/XC2yzRn/ctp32.png
+
+마이그중
+https://i.ibb.co/hYftGLk/bckx128t.png
+https://i.ibb.co/9qJ2TRZ/c4swapx128t.png
+https://i.ibb.co/C58Hkc4/rntx128t.png
+https://i.ibb.co/f20f3zF/token2x128t.png
+https://i.ibb.co/hXxhZzR/unix128t.png
+https://i.ibb.co/vVhpGPp/wethx128t.png
