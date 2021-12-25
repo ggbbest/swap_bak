@@ -41,6 +41,7 @@ export const walletconnect = new WalletConnectConnector({
 export const fortmatic = new FortmaticConnector({
   apiKey: FORMATIC_KEY ?? '',
   chainId: 1
+  // chainId: 21004
 })
 
 // mainnet only

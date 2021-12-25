@@ -42,7 +42,16 @@ yarn start
 
 
 
+//////////////////
+/src/connectors/Fortmatic.ts
+type FormaticSupportedChains = Extract<ChainId, ChainId.MAINNET | ChainId.ROPSTEN | ChainId.RINKEBY | ChainId.KOVAN | ChainId.C4EI>
 
+/src/constants/multicall/index.ts
+multicall [ChainId.C4EI]: '0x84d291baBAE85f583dE187f7a46dA76e78cA2657'
+
+V1_FACTORY_ADDRESSES must make c4ei 
+/src/constants/v1/index.ts
+//////////////////
 
 
 
