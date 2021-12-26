@@ -1,86 +1,9 @@
-
 web3.personal.unlockAccount("0xad70df6bd78734721f42cd8ccace42b25d83aa65")
-web3.personal.unlockAccount("0x7f6ae1be542d257dff6071e6a82f4c69c3578dfa")
-
 yarn truffle-migrate
 
 dev@ubuntu:~/c4eiswap/core$ yarn truffle-migrate
-yarn run v1.22.5
-$ ./node_modules/.bin/truffle migrate --reset;
-
-Compiling your contracts...
-===========================
-> Everything is up to date, there is nothing to compile.
-
-
-
-Starting migrations...
-======================
-> Network name:    'development'
-> Network id:      21004
-> Block gas limit: 8000000 (0x7a1200)
-
-
-1_initial_migration.js
-======================
-
-   Deploying 'Migrations'
-   ----------------------
-   > transaction hash:    0xd15bb46d47259c5c75af71c8cb485d9b5b24bb68606fc42357f52f03100fc6c4
-   > Blocks: 0            Seconds: 12
-   > contract address:    0x01fE56C378d62e2194C9fB81E84D3f24E8b22867
-   > block number:        67377
-   > block timestamp:     1631759133
-   > account:             0x92b9D1f63ed9545A7853f6C28192430707a51819
-   > balance:             34194
-   > gas used:            137422 (0x218ce)
-   > gas price:           20 gwei
-   > value sent:          0 ETH
-   > total cost:          0.00274844 ETH
-
-
-   > Saving migration to chain.
-   > Saving artifacts
-   -------------------------------------
-   > Total cost:          0.00274844 ETH
-
-
-2_deploy_contracts.js
-=====================
-
-   Deploying 'CroDefiSwapFactory'
-   ------------------------------
-   > transaction hash:    0xbd8961380f334fcab6169a2f0a06c4c637fab2834db324631e08e1049863a4fc
-   > Blocks: 1            Seconds: 20
-   > contract address:    0xA4cAd563dc20325eC5D7036288A7B3A840089E1C
-   > block number:        67380
-   > block timestamp:     1631759158
-   > account:             0x92b9D1f63ed9545A7853f6C28192430707a51819
-   > balance:             34198
-   > gas used:            3501481 (0x356da9)
-   > gas price:           20 gwei
-   > value sent:          0 ETH
-   > total cost:          0.07002962 ETH
-
-Deployed CroDefiSwapFactory on network development with 0x92b9D1f63ed9545A7853f6C28192430707a51819 as feeSetter
-
-   > Saving migration to chain.
-   > Saving artifacts
-   -------------------------------------
-   > Total cost:          0.07002962 ETH
-
-
-Summary
-=======
-> Total deployments:   2
-> Final cost:          0.07277806 ETH
-
-
-Done in 49.39s.
-dev@ubuntu:~/c4eiswap/core$ 
----
-dev@ubuntu:~/c4eiswap/core$ yarn truffle-migrate
-yarn run v1.22.5
+yarn truffle-migrate
+yarn run v1.22.17
 $ ./node_modules/.bin/truffle migrate --reset;
 
 Compiling your contracts...
@@ -101,13 +24,13 @@ Starting migrations...
 
    Replacing 'Migrations'
    ----------------------
-   > transaction hash:    0x92b786130f824e6d3a0ce6b91d8d46b7ac5f6a297d28bfcef93665a3513e70c8
-   > Blocks: 0            Seconds: 28
-   > contract address:    0xa3c1a1e09358A13fb0A70bFe339690965202794f
-   > block number:        68694
-   > block timestamp:     1631775989
-   > account:             0x92b9D1f63ed9545A7853f6C28192430707a51819
-   > balance:             36826
+   > transaction hash:    0xdccb2b29ee4109d61db85950f4352e54288d27fe7ea9cd9baa62d4e70b5f0833
+   > Blocks: 0            Seconds: 20
+   > contract address:    0x84245EA90614e1800e074BeA26FAe721797b9800
+   > block number:        415191
+   > block timestamp:     1640448919
+   > account:             0xAd70df6Bd78734721F42CD8cCACe42b25D83Aa65
+   > balance:             12.058196331267521536
    > gas used:            137422 (0x218ce)
    > gas price:           20 gwei
    > value sent:          0 ETH
@@ -125,19 +48,19 @@ Starting migrations...
 
    Replacing 'CroDefiSwapFactory'
    ------------------------------
-   > transaction hash:    0x08762150d65a9977e085725d71beb50f5cb1272d5b49acad517c2affbfe76418
-   > Blocks: 0            Seconds: 12
-   > contract address:    0xEb12f7Ce83a5F421A12BD1EFA62dA4D4028Ff4B4
-   > block number:        68696
-   > block timestamp:     1631776071
-   > account:             0x92b9D1f63ed9545A7853f6C28192430707a51819
-   > balance:             36830
+   > transaction hash:    0x031e26c2b02a114827e4bc3122474366b5e1897a8637e5aecbaf418e1ebdcfbd
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x0baEE3029DEBFcF63aE172460ECDeCdF72FcC047
+   > block number:        415193
+   > block timestamp:     1640448999
+   > account:             0xAd70df6Bd78734721F42CD8cCACe42b25D83Aa65
+   > balance:             83066749711084846.058196331267521536
    > gas used:            3501481 (0x356da9)
    > gas price:           20 gwei
    > value sent:          0 ETH
    > total cost:          0.07002962 ETH
 
-Deployed CroDefiSwapFactory on network development with 0x7F6Ae1be542D257dfF6071e6a82f4C69C3578Dfa as feeSetter
+Deployed CroDefiSwapFactory on network development with 0xad70df6bd78734721f42cd8ccace42b25d83aa65 as feeSetter
 
    > Saving migration to chain.
    > Saving artifacts
@@ -151,5 +74,12 @@ Summary
 > Final cost:          0.07277806 ETH
 
 
-Done in 79.79s.
-dev@ubuntu:~/c4eiswap/core$ 
+Done in 71.20s.
+
+
+
+
+
+
+
+
