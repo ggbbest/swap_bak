@@ -1,37 +1,21 @@
 /**
  *Submitted for verification at Etherscan.io on 2018-11-20
- * CRO_TOKEN_ADDRESS = "0xA0b73E1Ff0B80914AB6fe0444E65848C4C34450b"
-https://etherscan.io/address/0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b#code
---> 0x95CA62cB94a37bE3D4930e05D1F7f6A1Ee202B9F --> 로 변경 2021-09-22
-Arg [0] : _name (string): C4EI SWAP
-Arg [1] : _symbol (string): CEI
+ -----Decoded View---------------
+Arg [0] : _name (string): CRO --> C4eiSwaP
+Arg [1] : _symbol (string): CRO --> CSP
 Arg [2] : _initialSupply (uint256): 10000000000000000000
 Arg [3] : _decimals (uint8): 8
 Arg [4] : _mintable (bool): False
-Arg [5] : _secondarySaleReserveWallet (address):			0xEb0e79C43fc3F7926F14e79D69cE8c72f1437094
-Arg [6] : _mainNetLaunchIncentiveReserveWallet (address):	0x6F94352Cd4d0AfdAC617255098979343769360E4
-Arg [7] : _capitalReserveWallet (address):					0x09AEd6933A313864A8B6ec3F2E82C885E3258E92
-Arg [8] : _ecosystemGrantsReserveWallet (address):			0x493D1882318bCF86647930C42B8bb203945F2b36
-Arg [9] : _airdropReserveWallet (address):					0xa0Bc8A3c82282dBaA71dbfc9fe37cE24bd24691F
+Arg [5] : _secondarySaleReserveWallet			(address): 0x35f517cab9a37bc31091c2f155d965af84e0bc85 --> TokenContinuousDistribution  --> 0xEB9d81D2F4Cfc2456Da2Cac656A426C8539394e5
+Arg [6] : _mainNetLaunchIncentiveReserveWallet	(address): 0x71507ee19cbc0c87ff2b5e05d161efe2aac4ee07 --> 0xCb5948CE973Dd1Fe0a74C46aFcb1d7C0F4F06D98 --> 100_MultiSigWalletWithDailyLimit.sol
+Arg [7] : _capitalReserveWallet					(address): 0x22e4f709fd5e7fe246fbf7e714ae89bdab7e2a5d --> 0x4AB744B3DbaD46d145f217297f2766542F8b1a78
+Arg [8] : _ecosystemGrantsReserveWallet			(address): 0xdda508f9f3c1b4ca39c8794df3a080298ebe9c55 --> 0x2a4a8a90F0709cde16744f5454Bc36a52D2Ff832
+Arg [9] : _airdropReserveWallet					(address): 0x67703f7d089f3ac7c8c13a18b2381cbd7ee3eded --> 0x842F6531392E5206113DcAEF4F0f1A4b15fb684F
 
- * -----Decoded View---------------
-Arg [0] : _name (string): CRO
-Arg [1] : _symbol (string): CRO
-Arg [2] : _initialSupply (uint256): 10000000000000000000
-Arg [3] : _decimals (uint8): 8
-Arg [4] : _mintable (bool): False
-Arg [5] : _secondarySaleReserveWallet (address): 0x35f517cab9a37bc31091c2f155d965af84e0bc85
-Arg [6] : _mainNetLaunchIncentiveReserveWallet (address): 0x71507ee19cbc0c87ff2b5e05d161efe2aac4ee07
-Arg [7] : _capitalReserveWallet (address): 0x22e4f709fd5e7fe246fbf7e714ae89bdab7e2a5d
-Arg [8] : _ecosystemGrantsReserveWallet (address): 0xdda508f9f3c1b4ca39c8794df3a080298ebe9c55
-Arg [9] : _airdropReserveWallet (address): 0x67703f7d089f3ac7c8c13a18b2381cbd7ee3eded
-
+0xAa44E71f896b7470CDF1b45139820848679D5e87
 */
-
 pragma solidity ^0.4.13;
-
 library SafeMath {
-
   /**
   * @dev Multiplies two numbers, throws on overflow.
   */
@@ -42,12 +26,10 @@ library SafeMath {
     if (_a == 0) {
       return 0;
     }
-
     c = _a * _b;
     assert(c / _a == _b);
     return c;
   }
-
   /**
   * @dev Integer division of two numbers, truncating the quotient.
   */
@@ -57,7 +39,6 @@ library SafeMath {
     // assert(_a == _b * c + _a % _b); // There is no case in which this doesn't hold
     return _a / _b;
   }
-
   /**
   * @dev Subtracts two numbers, throws on overflow (i.e. if subtrahend is greater than minuend).
   */
@@ -65,7 +46,6 @@ library SafeMath {
     assert(_b <= _a);
     return _a - _b;
   }
-
   /**
   * @dev Adds two numbers, throws on overflow.
   */
@@ -75,17 +55,14 @@ library SafeMath {
     return c;
   }
 }
-
 contract Ownable {
   address public owner;
-
 
   event OwnershipRenounced(address indexed previousOwner);
   event OwnershipTransferred(
     address indexed previousOwner,
     address indexed newOwner
   );
-
 
   /**
    * @dev The Ownable constructor sets the original `owner` of the contract to the sender
@@ -94,7 +71,6 @@ contract Ownable {
   constructor() public {
     owner = msg.sender;
   }
-
   /**
    * @dev Throws if called by any account other than the owner.
    */
@@ -102,7 +78,6 @@ contract Ownable {
     require(msg.sender == owner);
     _;
   }
-
   /**
    * @dev Allows the current owner to relinquish control of the contract.
    * @notice Renouncing to ownership will leave the contract without an owner.
@@ -113,7 +88,6 @@ contract Ownable {
     emit OwnershipRenounced(owner);
     owner = address(0);
   }
-
   /**
    * @dev Allows the current owner to transfer control of the contract to a newOwner.
    * @param _newOwner The address to transfer ownership to.
@@ -121,7 +95,6 @@ contract Ownable {
   function transferOwnership(address _newOwner) public onlyOwner {
     _transferOwnership(_newOwner);
   }
-
   /**
    * @dev Transfers control of the contract to a newOwner.
    * @param _newOwner The address to transfer ownership to.
@@ -132,28 +105,22 @@ contract Ownable {
     owner = _newOwner;
   }
 }
-
 contract ERC20Basic {
   function totalSupply() public view returns (uint256);
   function balanceOf(address _who) public view returns (uint256);
   function transfer(address _to, uint256 _value) public returns (bool);
   event Transfer(address indexed from, address indexed to, uint256 value);
 }
-
 contract BasicToken is ERC20Basic {
   using SafeMath for uint256;
-
   mapping(address => uint256) internal balances;
-
   uint256 internal totalSupply_;
-
   /**
   * @dev Total number of tokens in existence
   */
   function totalSupply() public view returns (uint256) {
     return totalSupply_;
   }
-
   /**
   * @dev Transfer token for a specified address
   * @param _to The address to transfer to.
@@ -162,13 +129,11 @@ contract BasicToken is ERC20Basic {
   function transfer(address _to, uint256 _value) public returns (bool) {
     require(_value <= balances[msg.sender]);
     require(_to != address(0));
-
     balances[msg.sender] = balances[msg.sender].sub(_value);
     balances[_to] = balances[_to].add(_value);
     emit Transfer(msg.sender, _to, _value);
     return true;
   }
-
   /**
   * @dev Gets the balance of the specified address.
   * @param _owner The address to query the the balance of.
@@ -177,16 +142,12 @@ contract BasicToken is ERC20Basic {
   function balanceOf(address _owner) public view returns (uint256) {
     return balances[_owner];
   }
-
 }
-
 contract ERC20 is ERC20Basic {
   function allowance(address _owner, address _spender)
     public view returns (uint256);
-
   function transferFrom(address _from, address _to, uint256 _value)
     public returns (bool);
-
   function approve(address _spender, uint256 _value) public returns (bool);
   event Approval(
     address indexed owner,
@@ -194,11 +155,8 @@ contract ERC20 is ERC20Basic {
     uint256 value
   );
 }
-
 contract StandardToken is ERC20, BasicToken {
-
   mapping (address => mapping (address => uint256)) internal allowed;
-
 
   /**
    * @dev Transfer tokens from one address to another
@@ -217,14 +175,12 @@ contract StandardToken is ERC20, BasicToken {
     require(_value <= balances[_from]);
     require(_value <= allowed[_from][msg.sender]);
     require(_to != address(0));
-
     balances[_from] = balances[_from].sub(_value);
     balances[_to] = balances[_to].add(_value);
     allowed[_from][msg.sender] = allowed[_from][msg.sender].sub(_value);
     emit Transfer(_from, _to, _value);
     return true;
   }
-
   /**
    * @dev Approve the passed address to spend the specified amount of tokens on behalf of msg.sender.
    * Beware that changing an allowance with this method brings the risk that someone may use both the old
@@ -239,7 +195,6 @@ contract StandardToken is ERC20, BasicToken {
     emit Approval(msg.sender, _spender, _value);
     return true;
   }
-
   /**
    * @dev Function to check the amount of tokens that an owner allowed to a spender.
    * @param _owner address The address which owns the funds.
@@ -256,7 +211,6 @@ contract StandardToken is ERC20, BasicToken {
   {
     return allowed[_owner][_spender];
   }
-
   /**
    * @dev Increase the amount of tokens that an owner allowed to a spender.
    * approve should be called when allowed[_spender] == 0. To increment
@@ -278,7 +232,6 @@ contract StandardToken is ERC20, BasicToken {
     emit Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
     return true;
   }
-
   /**
    * @dev Decrease the amount of tokens that an owner allowed to a spender.
    * approve should be called when allowed[_spender] == 0. To decrement
@@ -304,26 +257,20 @@ contract StandardToken is ERC20, BasicToken {
     emit Approval(msg.sender, _spender, allowed[msg.sender][_spender]);
     return true;
   }
-
 }
-
 contract MintableToken is StandardToken, Ownable {
   event Mint(address indexed to, uint256 amount);
   event MintFinished();
-
   bool public mintingFinished = false;
-
 
   modifier canMint() {
     require(!mintingFinished);
     _;
   }
-
   modifier hasMintPermission() {
     require(msg.sender == owner);
     _;
   }
-
   /**
    * @dev Function to mint tokens
    * @param _to The address that will receive the minted tokens.
@@ -345,7 +292,6 @@ contract MintableToken is StandardToken, Ownable {
     emit Transfer(address(0), _to, _amount);
     return true;
   }
-
   /**
    * @dev Function to stop minting new tokens.
    * @return True if the operation was successful.
@@ -356,18 +302,13 @@ contract MintableToken is StandardToken, Ownable {
     return true;
   }
 }
-
 contract ReleasableToken is ERC20, Ownable {
-
     /* The finalizer contract that allows unlift the transfer limits on this token */
     address public releaseAgent;
-
     /** A crowdsale contract can release us to the wild if the sale is a success. If false we are are in transfer lock up period.*/
     bool public released = false;
-
     /** Map of agents that are allowed to transfer tokens regardless of the lock down period. These are crowdsale contracts and possible the team multisig itself. */
     mapping(address => bool) public transferAgents;
-
     /**
      * Limit token transfer until the crowdsale is over.
      *
@@ -376,25 +317,21 @@ contract ReleasableToken is ERC20, Ownable {
         require(released || transferAgents[_sender], "For the token to be able to transfer: it's required that the crowdsale is in released state; or the sender is a transfer agent.");
         _;
     }
-
     /**
      * Set the contract that can call release and make the token transferable.
      *
      * Design choice. Allow reset the release agent to fix fat finger mistakes.
      */
     function setReleaseAgent(address addr) public onlyOwner inReleaseState(false) {
-
         // We don't do interface check here as we might want to a normal wallet address to act as a release agent
         releaseAgent = addr;
     }
-
     /**
      * Owner can allow a particular address (a crowdsale contract) to transfer tokens despite the lock up period.
      */
     function setTransferAgent(address addr, bool state) public onlyOwner inReleaseState(false) {
         transferAgents[addr] = state;
     }
-
     /**
      * One way function to release the tokens to the wild.
      *
@@ -403,45 +340,34 @@ contract ReleasableToken is ERC20, Ownable {
     function releaseTokenTransfer() public onlyReleaseAgent {
         released = true;
     }
-
     /** The function can be called only before or after the tokens have been released */
     modifier inReleaseState(bool releaseState) {
         require(releaseState == released, "It's required that the state to check aligns with the released flag.");
         _;
     }
-
     /** The function can be called only by a whitelisted release agent. */
     modifier onlyReleaseAgent() {
         require(msg.sender == releaseAgent, "Message sender is required to be a release agent.");
         _;
     }
-
     function transfer(address _to, uint _value) public canTransfer(msg.sender) returns (bool success) {
         // Call StandardToken.transfer()
         return super.transfer(_to, _value);
     }
-
     function transferFrom(address _from, address _to, uint _value) public canTransfer(_from) returns (bool success) {
         // Call StandardToken.transferForm()
         return super.transferFrom(_from, _to, _value);
     }
-
 }
-
 contract UpgradeableToken is StandardToken {
-
     using SafeMath for uint256;
-
 
     /** Contract / person who can set the upgrade path. This can be the same as team multisig wallet, as what it is with its default value. */
     address public upgradeMaster;
-
     /** The next contract where the tokens will be migrated. */
     UpgradeAgent public upgradeAgent;
-
     /** How many tokens we have upgraded by now. */
     uint256 public totalUpgraded;
-
     /**
      * Upgrade states.
      *
@@ -451,75 +377,54 @@ contract UpgradeableToken is StandardToken {
      *
      */
     enum UpgradeState {Unknown, NotAllowed, WaitingForAgent, ReadyToUpgrade}
-
     /**
      * Somebody has upgraded some of his tokens.
      */
     event Upgrade(address indexed _from, address indexed _to, uint256 _value);
-
     /**
      * New upgrade agent available.
      */
     event UpgradeAgentSet(address agent);
-
     /**
      * Do not allow construction without upgrade master set.
      */
     constructor(address _upgradeMaster) public {
         upgradeMaster = _upgradeMaster;
     }
-
     /**
      * Allow the token holder to upgrade some of their tokens to a new contract.
      */
     function upgrade(uint256 value) public {
-
         UpgradeState state = getUpgradeState();
-
         require(state == UpgradeState.ReadyToUpgrade, "It's required that the upgrade state is ready.");
-
         // Validate input value.
         require(value > 0, "The upgrade value is required to be above 0.");
-
         balances[msg.sender] = balances[msg.sender].sub(value);
-
         // Take tokens out from circulation
         totalSupply_ = totalSupply_.sub(value);
         totalUpgraded = totalUpgraded.add(value);
-
         // Upgrade agent reissues the tokens
         upgradeAgent.upgradeFrom(msg.sender, value);
         emit Upgrade(msg.sender, upgradeAgent, value);
     }
-
     /**
      * Set an upgrade agent that handles
      */
     function setUpgradeAgent(address agent) external {
-
         require(canUpgrade(), "It's required to be in canUpgrade() condition when setting upgrade agent.");
-
         require(agent != address(0), "Agent is required to be an non-empty address when setting upgrade agent.");
-
         // Only a master can designate the next agent
         require(msg.sender == upgradeMaster, "Message sender is required to be the upgradeMaster when setting upgrade agent.");
-
         // Upgrade has already begun for an agent
         require(getUpgradeState() != UpgradeState.ReadyToUpgrade, "Upgrade state is required to not be upgrading when setting upgrade agent.");
-
         require(address(upgradeAgent) == address(0), "upgradeAgent once set, cannot be reset");
-
         upgradeAgent = UpgradeAgent(agent);
-
         // Bad interface
         require(upgradeAgent.isUpgradeAgent(), "The provided updateAgent contract is required to be compliant to the UpgradeAgent interface method when setting upgrade agent.");
-
         // Make sure that token supplies match in source and target
         require(upgradeAgent.originalSupply() == totalSupply_, "The provided upgradeAgent contract's originalSupply is required to be equivalent to existing contract's totalSupply_ when setting upgrade agent.");
-
         emit UpgradeAgentSet(upgradeAgent);
     }
-
     /**
      * Get the state of the token upgrade.
      */
@@ -528,7 +433,6 @@ contract UpgradeableToken is StandardToken {
         else if (address(upgradeAgent) == address(0)) return UpgradeState.WaitingForAgent;
         else return UpgradeState.ReadyToUpgrade;
     }
-
     /**
      * Change the upgrade master.
      *
@@ -536,39 +440,27 @@ contract UpgradeableToken is StandardToken {
      */
     function setUpgradeMaster(address master) public {
         require(master != address(0), "The provided upgradeMaster is required to be a non-empty address when setting upgrade master.");
-
         require(msg.sender == upgradeMaster, "Message sender is required to be the original upgradeMaster when setting (new) upgrade master.");
-
         upgradeMaster = master;
     }
-
     bool canUpgrade_ = true;
-
     /**
      * Child contract can enable to provide the condition when the upgrade can begin.
      */
     function canUpgrade() public view returns (bool) {
         return canUpgrade_;
     }
-
 }
-
 contract CroToken is ReleasableToken, MintableToken, UpgradeableToken {
-
     event UpdatedTokenInformation(string newName, string newSymbol);
-
     string public name;
-
     string public symbol;
-
     uint8 public decimals;
-
     address public secondarySaleReserveWallet;
     address public mainNetLaunchIncentiveReserveWallet;
     address public capitalReserveWallet;
     address public ecosystemGrantsReserveWallet;
     address public airdropReserveWallet;
-
     /**
      * Construct the token.
      *
@@ -587,50 +479,36 @@ contract CroToken is ReleasableToken, MintableToken, UpgradeableToken {
         address _ecosystemGrantsReserveWallet,
         address _airdropReserveWallet)
     public UpgradeableToken(msg.sender) {
-
         // Create any address, can be transferred
         // to team multisig via changeOwner(),
         // also remember to call setUpgradeMaster()
         owner = msg.sender;
         releaseAgent = owner;
-
         name = _name;
         symbol = _symbol;
-
         decimals = _decimals;
-
         secondarySaleReserveWallet = _secondarySaleReserveWallet;
         mainNetLaunchIncentiveReserveWallet = _mainNetLaunchIncentiveReserveWallet;
         capitalReserveWallet = _capitalReserveWallet;
         ecosystemGrantsReserveWallet = _ecosystemGrantsReserveWallet;
         airdropReserveWallet = _airdropReserveWallet;
-
         if (_initialSupply > 0) {
             require((_initialSupply % 10) == 0, "_initialSupply has to be a mulitple of 10");
             uint256 thirtyPerCent = _initialSupply.mul(3).div(10);
             uint256 twentyPerCent = _initialSupply.mul(2).div(10);
             uint256 tenPerCent = _initialSupply.div(10);
-
             mint(secondarySaleReserveWallet, thirtyPerCent);
-
             mint(mainNetLaunchIncentiveReserveWallet, twentyPerCent);
-
             mint(capitalReserveWallet, twentyPerCent);
-
             mint(ecosystemGrantsReserveWallet, twentyPerCent);
-
             mint(airdropReserveWallet, tenPerCent);
-
         }
-
         // No more new supply allowed after the token creation
         if (!_mintable) {
             finishMinting();
             require(totalSupply_ > 0, "Total supply is required to be above 0 if the token is not mintable.");
         }
-
     }
-
     /**
      * When token is released to be transferable, enforce no new tokens can be created.
      */
@@ -638,30 +516,22 @@ contract CroToken is ReleasableToken, MintableToken, UpgradeableToken {
         mintingFinished = true;
         super.releaseTokenTransfer();
     }
-
     /**
      * Allow upgrade agent functionality kick in only if the crowdsale was success.
      */
     function canUpgrade() public view returns (bool) {
         return released && super.canUpgrade();
     }
-
     // Total supply
     function totalSupply() public view returns (uint) {
         return totalSupply_.sub(balances[address(0)]);
     }
-
 }
-
 contract UpgradeAgent {
-
     uint public originalSupply;
-
     /** Interface marker */
     function isUpgradeAgent() public pure returns (bool) {
         return true;
     }
-
     function upgradeFrom(address _from, uint256 _value) public;
-
 }

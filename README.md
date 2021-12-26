@@ -17,7 +17,8 @@ Please update the .env file to ensure full functionality.
 ### Build local modules
 
 ```bash
-cd local_modules/swap_sdk/
+cd local_modules
+cd swap_sdk
 yarn
 yarn build
 ```
@@ -84,7 +85,7 @@ https://gist.github.com/ggbbest/0c20dde59c328746c654b6cab4cf2f62
 
 ########################################################################################################
 *Submitted for verification at Etherscan.io on 2018-11-20
-* CRO_TOKEN_ADDRESS = "0xA0b73E1Ff0B80914AB6fe0444E65848C4C34450b"    --> 0x95CA62cB94a37bE3D4930e05D1F7f6A1Ee202B9F  	(https://exp.c4ei.net/tx/0x5e37bf0e3bb013a6b50820ac9db8a62d9a5e085d10450021e7618b2d6e9c0b31)
+* CRO_TOKEN_ADDRESS = "0xA0b73E1Ff0B80914AB6fe0444E65848C4C34450b"    --> 0xAa44E71f896b7470CDF1b45139820848679D5e87  	(https://exp.c4ei.net/tx/0x5e37bf0e3bb013a6b50820ac9db8a62d9a5e085d10450021e7618b2d6e9c0b31)
 	
 https://etherscan.io/address/0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b#code
 * -----Decoded View---------------
@@ -100,7 +101,7 @@ Arg [8] : _ecosystemGrantsReserveWallet (address):			0xdda508f9f3c1b4ca39c8794df
 Arg [9] : _airdropReserveWallet (address):					0x67703f7d089f3ac7c8c13a18b2381cbd7ee3eded
 ########################################################################################################
 ######################################
-Arg [5] : _secondarySaleReserveWallet (address):			0x35f517cab9a37bc31091c2f155d965af84e0bc85 --> 5_0TokenContinuousDistribution.sol --> 0x95CA62cB94a37bE3D4930e05D1F7f6A1Ee202B9F 
+Arg [5] : _secondarySaleReserveWallet (address):			0x35f517cab9a37bc31091c2f155d965af84e0bc85 --> 5_0TokenContinuousDistribution.sol --> 0xAa44E71f896b7470CDF1b45139820848679D5e87 
 															https://exp.c4ei.net/tx/0x85ff7c89d980f1c4ed5d5a64d3c515b2dece02478975d654097bc4a36afcd46a
 															--> 0xEb0e79C43fc3F7926F14e79D69cE8c72f1437094
 	-----Decoded View---------------
@@ -142,7 +143,7 @@ Arg [9] : _airdropReserveWallet (address):					0x67703f7d089f3ac7c8c13a18b2381cb
 * --------------------
 https://exp.c4ei.net/tx/0x5e37bf0e3bb013a6b50820ac9db8a62d9a5e085d10450021e7618b2d6e9c0b31
 --------------------
-0x95CA62cB94a37bE3D4930e05D1F7f6A1Ee202B9F
+0xAa44E71f896b7470CDF1b45139820848679D5e87
 -----Decoded View---------------
 Arg [0] : _name (string): C4EI SWAP
 Arg [1] : _symbol (string): CEI
@@ -163,7 +164,7 @@ https://etherscan.io/address/0x6aba3e56aeb3b95ad64161103d793fac5f6ce4f7#code
 0x6aba3E56AEb3b95aD64161103D793fAc5F6ce4F7
 
 -----Decoded View---------------
-Arg [0] : _stakingToken (address): 0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b    --> 0x95CA62cB94a37bE3D4930e05D1F7f6A1Ee202B9F 
+Arg [0] : _stakingToken (address): 0xa0b73e1ff0b80914ab6fe0444e65848c4c34450b    --> 0xAa44E71f896b7470CDF1b45139820848679D5e87 
 Arg [1] : _lockInDuration (uint256): 31557600
 
 -----Encoded View---------------
