@@ -40,5 +40,5 @@ cypress/fixtures/example.json
 # parcel
 .cache
 .env
-dev/
+/dev
 swap-contracts-periphery/
