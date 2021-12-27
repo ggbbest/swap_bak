@@ -138,7 +138,8 @@ const StakeSummary: FC = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const { account, chainId } = useActiveWeb3React()
-  const selectedCurrencyBalance = useCurrencyBalance(account ?? undefined, CRO_TOKEN ?? undefined)
+  // const selectedCurrencyBalance = useCurrencyBalance(account ?? undefined, CRO_TOKEN ?? undefined)
+  const selectedCurrencyBalance = useCurrencyBalance(account ?? undefined, C4EI_TOKEN ?? undefined)
   const { getStakeSummaryFromContract, getOutstandingStakes, getTotalAccruedCro } = useCryptoStakeSummary()
 
   const updateStakeSummary = useCallback(async () => {

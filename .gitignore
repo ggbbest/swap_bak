@@ -41,3 +41,4 @@ cypress/fixtures/example.json
 .cache
 .env
 dev/
+swap-contracts-periphery/
