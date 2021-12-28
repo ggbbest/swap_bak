@@ -34,6 +34,17 @@ yarn
 ```bash
 yarn start
 ```
+ 
+
+1. 특정 application 로그 확인
+   yarn logs -applicationId <application_id>
+2. 에러로그만 확인
+   yarn logs -applicationId <application_id> -log_files stderr
+3. container별 로그 확인
+   # application에서 사용하는 container 전체출력
+   yarn logs -applicationId <application_id> -show_application_log_info
+   # 위에 container정보에서 특정 container에 대한 로그 확인
+   yarn logs -applicationId <application_id> -containerId <container_id>
 
 ### Configuring the environment
 
@@ -56,6 +67,6 @@ V1_FACTORY_ADDRESSES must make c4ei
 
 /swap.c4ei.net/.env
 /swap.c4ei.net/local_modules/swap-sdk/.env
-FACTORY_ADDRESS="0xC995D403d9F95325C8d6AFd16C2C505501F48F99"
-INIT_CODE_HASH="0x1ce2320bf2a425f6f2201aff0ca56456ee1adf437aec90da99e06205c9468b94"
+FACTORY_ADDRESS="0xD50ca576cA5962C59b841b036a0d5488E59EFe6B"
+INIT_CODE_HASH="0x33200e31f337fafeeeabfacdc6ab723c9b68ee30b1b0537cb5d8cbf5a040bc65"
 REACT_APP_CHAIN_ID = "21004"
