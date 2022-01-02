@@ -24,12 +24,16 @@ const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
   5: 'goerli.',
   42: 'kovan.'
   ,21004: 'c4ei.'
+  ,8217: 'klay.'
 }
 
 export function getEtherscanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
   // const prefix = ChainId ==21004 ? `https://exp.c4ei.net` : `https://${ETHERSCAN_PREFIXES[chainId] || ETHERSCAN_PREFIXES[1]}etherscan.io`
 var _domain = `https://${ETHERSCAN_PREFIXES[chainId] || ETHERSCAN_PREFIXES[1]}etherscan.io`;
 if(_domain=="https://c4ei.etherscan.io"){_domain="https://exp.c4ei.net";}
+if(_domain=="https://klay.etherscan.io"){_domain="https://scope.klaytn.com";}
+
+
   // switch (ChainId) {
   //   case 21004 : {_domain = "https://exp.c4ei.net"; break;}
   //   default: { _domain = `https://${ETHERSCAN_PREFIXES[chainId] || ETHERSCAN_PREFIXES[1]}etherscan.io`; break;}

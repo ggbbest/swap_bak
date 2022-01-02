@@ -57,7 +57,7 @@
     "eslint-plugin-react-hooks": "^4.0.0",
     "ethers": "^5.0.7",
     "graphql": "14.x || 15.x",
-    "graphql-request": "^3.1.0",
+    "graphql-request": "^3.7.0",
     "i18next": "^15.0.9",
     "i18next-browser-languagedetector": "^3.0.1",
     "i18next-xhr-backend": "^2.0.1",
@@ -67,7 +67,7 @@
     "lodash.flatmap": "^4.5.0",
     "multicodec": "^2.0.0",
     "multihashes": "^3.0.1",
-    "parcel": "^1.12.4",
+    "parcel": "1.12.3",
     "parcel-plugin-static-files-copy": "^2.5.0",
     "polished": "^3.3.2",
     "prettier": "^1.17.0",
@@ -102,12 +102,12 @@
     "@walletconnect/web3-provider": "1.1.1-alpha.0"
   },
   "scripts": {
-    "start": "parcel src/index.html --port 3000 --out-dir build --no-source-maps",
+    "start": "parcel src/index.html --port 3005 --out-dir build --no-source-maps",
     "build": "parcel build src/index.html --out-dir build --public-url /defi --no-source-maps",
     "test": "jest --env=jsdom",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:windows": "yarn eslint \"./src/**/*.{js,jsx,ts,tsx}\" --fix",
-    "integration-test": "start-server-and-test 'serve build -l 3000' http://localhost:3000 'cypress run'",
+    "integration-test": "start-server-and-test 'serve build -l 3005' http://localhost:3005 'cypress run'",
     "cypress:open": "cypress open"
   },
   "jest": {
