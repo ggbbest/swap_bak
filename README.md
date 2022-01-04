@@ -70,3 +70,13 @@ V1_FACTORY_ADDRESSES must make c4ei
 FACTORY_ADDRESS="0xD50ca576cA5962C59b841b036a0d5488E59EFe6B"
 INIT_CODE_HASH="0x33200e31f337fafeeeabfacdc6ab723c9b68ee30b1b0537cb5d8cbf5a040bc65"
 REACT_APP_CHAIN_ID = "21004"
+
+
+/home/dev/www/swap_sol_project/2_swap-contracts-periphery/readme.txt
+   > transaction hash:    0x58877b236703b30a42ba3f038b0a87d1a46924035adbe4d1c5ff6f785d250a36
+   > contract address:    0x395A3BE5A29e45f534d24C796dDd2F98eE1aE197
+   > block number:        426209
+
+CroDefiSwapRouter02 deployed on development with 
+factoryAddress 0xC995D403d9F95325C8d6AFd16C2C505501F48F99
+wethAddress 0xE94b78D58826eca66a921cEc0E3Bc40BC6707897

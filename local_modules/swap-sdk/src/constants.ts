@@ -9,8 +9,8 @@ export enum ChainId {
   RINKEBY = 4,
   GÖRLI = 5,
   KOVAN = 42,
-  C4EI = 21004,
-  KLAY = 8217
+  C4EI = 21004
+  // ,KLAY = 8217
 }
 
 export enum TradeType {
