@@ -12,7 +12,7 @@ describe('getMultiplierRange', () => {
     expect(getMultiplierRange(croStake, '4')).toEqual('0.0')
   })
 
-  it('should be 0 for stake 1 CRO only', () => {
+  it('should be 0 for stake 1 CERU only', () => {
     const croStake = toBigNumber('1')
     expect(getMultiplierRange(croStake, '1')).toEqual('0.0')
     expect(getMultiplierRange(croStake, '2')).toEqual('0.0')
@@ -20,7 +20,7 @@ describe('getMultiplierRange', () => {
     expect(getMultiplierRange(croStake, '4')).toEqual('0.0')
   })
 
-  it('should be 0 for stake 999 CRO only', () => {
+  it('should be 0 for stake 999 CERU only', () => {
     const croStake = toBigNumber('999')
     expect(getMultiplierRange(croStake, '1')).toEqual('0.0')
     expect(getMultiplierRange(croStake, '2')).toEqual('0.0')
@@ -28,7 +28,7 @@ describe('getMultiplierRange', () => {
     expect(getMultiplierRange(croStake, '4')).toEqual('0.0')
   })
 
-  it('should not be 0 for stake 1000 CRO', () => {
+  it('should not be 0 for stake 1000 CERU', () => {
     const croStake = toBigNumber('1000')
     expect(getMultiplierRange(croStake, '1')).toEqual('1.0')
     expect(getMultiplierRange(croStake, '2')).toEqual('1.2')
@@ -36,7 +36,7 @@ describe('getMultiplierRange', () => {
     expect(getMultiplierRange(croStake, '4')).toEqual('2.0')
   })
 
-  it('should not be 0 for stake 1000.01 CRO', () => {
+  it('should not be 0 for stake 1000.01 CERU', () => {
     const croStake = toBigNumber('1000.01')
     expect(getMultiplierRange(croStake, '1')).toEqual('1.0')
     expect(getMultiplierRange(croStake, '2')).toEqual('1.2')
@@ -44,7 +44,7 @@ describe('getMultiplierRange', () => {
     expect(getMultiplierRange(croStake, '4')).toEqual('2.0')
   })
 
-  it('should not be 0 for stake 50000000-1 CRO', () => {
+  it('should not be 0 for stake 50000000-1 CERU', () => {
     const croStake = toBigNumber('49999999')
     expect(getMultiplierRange(croStake, '1')).toEqual('8.0')
     expect(getMultiplierRange(croStake, '2')).toEqual('9.2')
@@ -52,7 +52,7 @@ describe('getMultiplierRange', () => {
     expect(getMultiplierRange(croStake, '4')).toEqual('16.0')
   })
 
-  it('should not be 0 for stake 50000000 CRO', () => {
+  it('should not be 0 for stake 50000000 CERU', () => {
     const croStake = toBigNumber('50000000')
     expect(getMultiplierRange(croStake, '1')).toEqual('10.0')
     expect(getMultiplierRange(croStake, '2')).toEqual('11.5')

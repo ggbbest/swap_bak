@@ -11,7 +11,7 @@ const calculatorDataQuery = gql`
       averageMultiplier
     }
     prices(id: "1") {
-      cro
+      CERU
     }
     factory(id: $factoryId) {
       totalLiquidityUSD
@@ -19,9 +19,9 @@ const calculatorDataQuery = gql`
   }
 `
 
-function getCroToUsdRate(prices: { cro: string }[]) {
-  const { cro } = prices[0]
-  return cro
+function getCroToUsdRate(prices: { CERU: string }[]) {
+  const { CERU } = prices[0]
+  return CERU
 }
 
 /**

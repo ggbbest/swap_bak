@@ -73,7 +73,7 @@ export default function YieldCroInputPanel({ id, label, value, onUserInput }: In
           />
           <Aligner>
             <Text fontSize={[24]} fontWeight={500}>
-              CRO
+              CERU
             </Text>
           </Aligner>
         </InputRow>

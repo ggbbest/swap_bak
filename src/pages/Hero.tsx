@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import CRODefiSwap from '../assets/images/cro-defi-swap.svg'
+import CRODefiSwap from '../assets/images/CERU-defi-swap.svg'
 import styled from 'styled-components'
 import { Text } from 'rebass'
 

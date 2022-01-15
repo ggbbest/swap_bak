@@ -69,13 +69,13 @@ export function SwapPoolTabs({ active }: { active: 'swap' | 'pool' | 'boost' | '
       <StyledNavLink id={`pool-nav-link`} to={'/swap-pool'} isActive={() => active === 'pool'}>
         {t('pool')}
       </StyledNavLink>
-      <StyledNavLink id={`boost-nav-link`} to={'/swap-boost'} isActive={() => active === 'boost'}>
+      {/* <StyledNavLink id={`boost-nav-link`} to={'/swap-boost'} isActive={() => active === 'boost'}>
         <NotificationDot />
         {t('boost')}
       </StyledNavLink>
       <StyledNavLink id={`yield-nav-link`} to={'/swap-apy'} isActive={() => active === 'apy'}>
         {t('apy')}
-      </StyledNavLink>
+      </StyledNavLink> */}
     </Tabs>
   )
 }

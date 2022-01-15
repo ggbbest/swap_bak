@@ -69,7 +69,7 @@ describe('calculator domain', () => {
       })
     })
 
-    it('should get empty default result when there is some liquidity provided by user, but no CRO staked', () => {
+    it('should get empty default result when there is some liquidity provided by user, but no CERU staked', () => {
       const calculatorState = stubCalculatorState({
         croUsdRate: '0.15',
         allPoolStakedCroAmount: '50000000',
@@ -86,7 +86,7 @@ describe('calculator domain', () => {
       })
     })
 
-    it('should get non empty result when there is some liquidity provided by user, but with 1000 CRO staked', () => {
+    it('should get non empty result when there is some liquidity provided by user, but with 1000 CERU staked', () => {
       const calculatorState = stubCalculatorState({
         croUsdRate: '0.15',
         allPoolStakedCroAmount: '50000000',

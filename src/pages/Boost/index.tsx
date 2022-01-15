@@ -53,7 +53,7 @@ const BoostTab = () => {
 
   return (
     <>
-      <CustomTitle titleStr={'Farm CRO By Staking | DeFi Swap'}></CustomTitle>
+      <CustomTitle titleStr={'Farm CERU By Staking | DeFi Swap'}></CustomTitle>
       <AppBody>
         <SwapPoolTabs active={'boost'} />
         <AutoColumn gap="lg" justify="center">

@@ -114,7 +114,7 @@ const StakeSummaryTermItem = ({ isDue, terms, dayDiff, amount, onUnstake, chainI
           </div>
 
           <div>
-            <StyledText>{formatNumber(formatUnits(amount, 8))} CRO</StyledText>
+            <StyledText>{formatNumber(formatUnits(amount, 8))} CERU</StyledText>
           </div>
         </RowBetween>
       </AutoColumn>

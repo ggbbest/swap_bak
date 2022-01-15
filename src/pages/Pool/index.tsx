@@ -60,7 +60,7 @@ export default function Pool() {
       <AppBody>
         <SwapPoolTabs active={'pool'} />
         <AutoColumn gap="lg" justify="center">
-          <ButtonPrimary id="join-pool-button" as={Link} disabled={!account} style={{ padding: 16 }} to="/swap-add/CRO">
+          <ButtonPrimary id="join-pool-button" as={Link} disabled={!account} style={{ padding: 16 }} to="/swap-add/CFT">
             <Text fontWeight={500} fontSize={20}>
               Add Liquidity
             </Text>
@@ -88,6 +88,7 @@ export default function Pool() {
               </LightCard>
             ) : allV2PairsWithLiquidity?.length > 0 ? (
               <>
+              alert(v2Pair)
                 {allV2PairsWithLiquidity.map(v2Pair => (
                   <FullPositionCard key={v2Pair.liquidityToken.address} pair={v2Pair} />
                 ))}

@@ -60,7 +60,7 @@ const BoostTab = () => {
             onUserInput={onUserInput}
             onMax={() => setStakeAmount(maxAmount?.toSignificant(6).toString() || '0')}
             id="stake-currency-input"
-            currencyLogoUrl="https://swap.c4ei.net/price/coin-data/icon/CRO/color_icon.png"
+            currencyLogoUrl="https://swap.c4ei.net/price/coin-data/icon/CERU/color_icon.png"
           />
 
           <Select
@@ -84,7 +84,7 @@ const BoostTab = () => {
           >
             {lessThanMinimumStake ? (
               <Text fontWeight={500} fontSize={16}>
-                Your CRO DeFi Yield multiplier will be 0 if you stake less than 1000 CRO
+                Your CERU DeFi Yield multiplier will be 0 if you stake less than 1000 CERU
               </Text>
             ) : (
               <Text fontWeight={500} fontSize={20}>

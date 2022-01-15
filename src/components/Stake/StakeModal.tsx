@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 import { Text } from 'rebass'
 import styled, { ThemeContext } from 'styled-components'
 import { TokenAmount } from 'swap-sdk'
-import CRO_ICON from '../../assets/images/cro-icon.png'
+import CRO_ICON from '../../assets/images/CERU-icon.png'
 import CRO_TOKEN from '../../constants/croToken'
 import C4EI_ICON from '../../assets/images/c4eix24t.png'
 import C4EI_TOKEN from '../../constants/c4eiToken'
@@ -196,7 +196,7 @@ const StakeModal = ({ isOpen, onDismiss, yearStake, stakeAmount }: StakeModalPro
         )
 
         addTransaction(result, {
-          summary: `Staking ${stakeAmount} CRO for ${t(yearStake)}`
+          summary: `Staking ${stakeAmount} CERU for ${t(yearStake)}`
         })
 
         dispatch({
@@ -267,7 +267,7 @@ const StakeModal = ({ isOpen, onDismiss, yearStake, stakeAmount }: StakeModalPro
         attemptingTxn={state.attemptingTxn}
         hash={state.txHash}
         content={confirmationContent}
-        pendingText={state.isOpenConfirm ? `${t('pending_stake_cor')} ${stakeAmount} CRO` : ''}
+        pendingText={state.isOpenConfirm ? `${t('pending_stake_cor')} ${stakeAmount} CERU` : ''}
       />
       <Modal isOpen={isOpen} onDismiss={onBeforeDismiss} maxHeight={90}>
         <Wrapper>
@@ -283,7 +283,7 @@ const StakeModal = ({ isOpen, onDismiss, yearStake, stakeAmount }: StakeModalPro
               <RowBetween>
                 <StyledText size={32}>{t(stakeAmount)}</StyledText>
                 <StyledText size={20}>
-                  <StyledIcon src={CRO_ICON} alt="" /> CRO
+                  <StyledIcon src={CRO_ICON} alt="" /> CERU
                 </StyledText>
               </RowBetween>
 

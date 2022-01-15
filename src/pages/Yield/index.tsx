@@ -84,12 +84,12 @@ function AnnualizedCroReward({ reward }: { reward: string }) {
   if (reward.length > 13) {
     const displayedReward = `${reward.substring(0, 11)}...`
     return (
-      <MouseoverTooltip text={`${reward} CRO`}>
-        <Text fontSize={40}>{displayedReward} CRO</Text>
+      <MouseoverTooltip text={`${reward} CERU`}>
+        <Text fontSize={40}>{displayedReward} CERU</Text>
       </MouseoverTooltip>
     )
   }
-  return <Text fontSize={40}>{reward} CRO</Text>
+  return <Text fontSize={40}>{reward} CERU</Text>
 }
 
 export default function Yield() {
@@ -150,7 +150,7 @@ export default function Yield() {
                       <>
                         {t('apy_tooltip_1')}
                         <ExternalLink
-                          href={`https://help.swap.c4ei.net/en/articles/4429871-how-is-my-accrued-cro-defi-yield-calculated-on-defi-swap`}
+                          href={`https://help.swap.c4ei.net/en/articles/4429871-how-is-my-accrued-CERU-defi-yield-calculated-on-defi-swap`}
                         >
                           {t('apy_tooltip_faq')}
                         </ExternalLink>
@@ -172,7 +172,7 @@ export default function Yield() {
               </InfoColumn>
               <RowBetween marginTop="24px">
                 <ResultContainer>
-                  <Text fontSize={14}>Annualized CRO DeFi Yield</Text>
+                  <Text fontSize={14}>Annualized CERU DeFi Yield</Text>
                   <AnnualizedCroReward reward={result.annualizedCroRewards} />
                 </ResultContainer>
               </RowBetween>

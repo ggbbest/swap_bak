@@ -128,7 +128,7 @@ export const UnstakeModal = ({ isOpen, onDismiss, terms, stakeAmount }: UnstakeM
       ?.unstake(stakeAmount.toString(), Buffer.from('test'))
       .then((result: TransactionResponse) => {
         addTransaction(result, {
-          summary: `Unstaking ${formatUnits(stakeAmount, 8)} CRO for ${t(terms)}`
+          summary: `Unstaking ${formatUnits(stakeAmount, 8)} CERU for ${t(terms)}`
         })
         dispatch({
           type: 'attempted',
@@ -174,7 +174,7 @@ export const UnstakeModal = ({ isOpen, onDismiss, terms, stakeAmount }: UnstakeM
         attemptingTxn={state.attemptingTxn}
         hash={state.txHash}
         content={confirmationContent}
-        pendingText={state.isOpenConfirm ? `${t('unstaking_cro_pending')} ${formattedStake} CRO` : ''}
+        pendingText={state.isOpenConfirm ? `${t('unstaking_cro_pending')} ${formattedStake} CERU` : ''}
       />
       <Modal isOpen={isOpen} maxHeight={90} onDismiss={onBeforeDismiss}>
         <Wrapper>
@@ -190,7 +190,7 @@ export const UnstakeModal = ({ isOpen, onDismiss, terms, stakeAmount }: UnstakeM
               <RowBetween>
                 <StyledText size={32}>{formattedStake}</StyledText>
                 <StyledText size={20}>
-                  <StyledIcon src={CRO_ICON} alt="" /> CRO
+                  <StyledIcon src={CRO_ICON} alt="" /> CERU
                 </StyledText>
               </RowBetween>
 

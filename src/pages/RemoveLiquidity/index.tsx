@@ -116,7 +116,7 @@ export default function RemoveLiquidity({
     // ]
 
     // const domain = {
-    //   name: 'CRO Swap',
+    //   name: 'CERU Swap',
     //   version: '1',
     //   chainId: chainId,
     //   verifyingContract: pair.liquidityToken.address

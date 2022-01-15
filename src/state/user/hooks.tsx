@@ -155,7 +155,7 @@ export function usePairAdder(): (pair: Pair) => void {
  * @param tokenB the other token
  */
 export function toLiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
-  return new Token(tokenA.chainId, Pair.getAddress(tokenA, tokenB), 18, 'CRO-SWAP', 'CRO Defi Swap')
+  return new Token(tokenA.chainId, Pair.getAddress(tokenA, tokenB), 18, 'CERU-SWAP', 'CERU Defi Swap')
 }
 
 /**

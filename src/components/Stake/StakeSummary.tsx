@@ -186,7 +186,7 @@ const StakeSummary: FC = () => {
     })
   }, [selectedCurrencyBalance, dispatch, state])
 
-  // If CRO balance update => refresh the stake summary
+  // If CERU balance update => refresh the stake summary
   useEffect(() => {
     if (!updateOutstandingStakes || !updateStakeSummary) return
     updateOutstandingStakes()
@@ -244,7 +244,7 @@ const StakeSummary: FC = () => {
               <br />
               <RowBetween>
                 <StyledSummarySubtitle>{t('stake_summary_total_staked_cro')}</StyledSummarySubtitle>
-                <StyledCROPrice>{`${formatNumber(state.totalStaked)} CRO`}</StyledCROPrice>
+                <StyledCROPrice>{`${formatNumber(state.totalStaked)} CERU`}</StyledCROPrice>
               </RowBetween>
               <RowBetween>
                 <StyledSummarySubtitle>
@@ -254,7 +254,7 @@ const StakeSummary: FC = () => {
                       <>
                         {t('boost_tooltip_1')}
                         <ExternalLink
-                          href={`http://help.swap.c4ei.net/en/articles/4429871-how-is-my-accrued-cro-defi-yield-calculated-on-defi-swap`}
+                          href={`http://help.swap.c4ei.net/en/articles/4429871-how-is-my-accrued-CERU-defi-yield-calculated-on-defi-swap`}
                         >
                           {t('boost_tooltip_click_here')}
                         </ExternalLink>
@@ -263,7 +263,7 @@ const StakeSummary: FC = () => {
                     }
                   />
                 </StyledSummarySubtitle>
-                <StyledCROPrice>{`${formatNumber(state.totalAccruedCro)} CRO`}</StyledCROPrice>
+                <StyledCROPrice>{`${formatNumber(state.totalAccruedCro)} CERU`}</StyledCROPrice>
               </RowBetween>
             </InfoCard>
             <RowBetween>
