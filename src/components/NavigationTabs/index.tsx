@@ -59,7 +59,8 @@ const NotificationDot = styled.div`
   right: -3.1em;
 `
 
-export function SwapPoolTabs({ active }: { active: 'swap' | 'pool' | 'boost' | 'apy' }) {
+// export function SwapPoolTabs({ active }: { active: 'swap' | 'pool' | 'boost' | 'apy' }) {
+  export function SwapPoolTabs({ active }: { active: 'swap' | 'pool' }) {
   const { t } = useTranslation()
   return (
     <Tabs style={{ marginBottom: '20px', width: '100%', maxWidth: '350px', marginRight: 'auto', marginLeft: 'auto' }}>

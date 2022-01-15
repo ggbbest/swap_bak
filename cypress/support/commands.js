@@ -45,9 +45,9 @@ class CustomizedBridge extends _Eip1193Bridge {
     //Update here for chain id as well
     if (method === 'eth_chainId') {
       if (isCallbackForm) {
-        callback(null, { result: '0x3' })
+        callback(null, { result: '0x520c' })
       } else {
-        return Promise.resolve('0x3')
+        return Promise.resolve('0x520c')
       }
     }
     try {
@@ -75,7 +75,8 @@ Cypress.Commands.overwrite('visit', (original, url, options) => {
     onBeforeLoad(win) {
       options && options.onBeforeLoad && options.onBeforeLoad(win)
       win.localStorage.clear()
-      const provider = new JsonRpcProvider('https://ropsten.infura.io/v3/83658839196943e3b2119f093b11ee0b', 3)
+      // const provider = new JsonRpcProvider('https://ropsten.infura.io/v3/83658839196943e3b2119f093b11ee0b', 3)
+      const provider = new JsonRpcProvider('https://rpc.c4ei.net', 21004)
       const signer = new Wallet(PRIVATE_KEY_TEST_NEVER_USE, provider)
       win.ethereum = new CustomizedBridge(signer, provider)
     }
