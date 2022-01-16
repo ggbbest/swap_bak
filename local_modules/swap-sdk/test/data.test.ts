@@ -8,7 +8,7 @@ describe.skip('data', () => {
   })
 
   it('Token:CACHE', async () => {
-    const token = await Fetcher.fetchTokenData(ChainId.MAINNET, '0xE0B7927c4aF23765Cb51314A0E0521A9645F0E2A') // DGD
+    const token = await Fetcher.fetchTokenData(ChainId.MAINNET, '0x380e5cdE38c35b184fe4B2cDB56EA4889CaE1Cb1') // DGD
     expect(token.decimals).toEqual(9)
   })
 

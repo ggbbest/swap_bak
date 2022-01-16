@@ -105,3 +105,9 @@ length: 4
 
 /swap.c4ei.net/cypress/support/commands.js
 CustomizedBridge
+
+
+(alias) useMemo<{liquidityToken: Token;tokens: [Token, Token];}[]>(factory: () 
+=> {liquidityToken: Token;tokens: [Token, Token];}[], deps: 
+   React.DependencyList | undefined): {liquidityToken: Token;tokens: [Token, Token];}[]
+import useMemo
