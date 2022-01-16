@@ -1,0 +1,11 @@
+/home/dev/www/swap.c4ei.net/node_modules/@web3-react
+var chainIdToNetwork = {
+  21004: 'c4ei'
+
+
+cp -r /home/dev/www/swap.c4ei.net/node_modules/@web3-react /home/dev/www/swap.c4ei.net/change/@web3-react
+
+cp -r /home/dev/www/swap.c4ei.net/change/@web3-react /home/dev/www/swap.c4ei.net/node_modules/@web3-react
+
+cd /home/dev/www/swap.c4ei.net/local_modules/swap-sdk
+yarn build

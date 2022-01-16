@@ -74,7 +74,8 @@ interface StakeSummaryTermItemProps extends PersonalStakes {
  * @param t i18n function
  */
 function calRemainingDuration(chainId: ChainId | undefined, millisecond: number, t: Function): string {
-  if (chainId === ChainId.MAINNET) return `${Math.ceil(dayjs.duration(millisecond).asDays())} ${t('days')}`
+  // if (chainId === ChainId.MAINNET) return `${Math.ceil(dayjs.duration(millisecond).asDays())} ${t('days')}`
+  if (chainId === ChainId.C4EI) return `${Math.ceil(dayjs.duration(millisecond).asDays())} ${t('days')}`
 
   return `${Math.ceil(dayjs.duration(millisecond).asMinutes())} ${t('minutes')}`
 }

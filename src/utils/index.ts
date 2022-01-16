@@ -3,7 +3,7 @@ import { BigNumber } from '@ethersproject/bignumber'
 import { AddressZero } from '@ethersproject/constants'
 import { Contract } from '@ethersproject/contracts'
 import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
-import { ChainId, Currency, CurrencyAmount, ETHER, JSBI, Percent, Token } from 'swap-sdk'
+import { ChainId, Currency, CurrencyAmount, ETHER, JSBI, Percent, Token } from '../../local_modules/swap-sdk'
 import { CRYPTO_ROUTER_ABI } from '../constants/abis/cryptoAbi'
 import { ROUTER_ADDRESS } from '../constants/croAddress'
 import { TokenAddressMap } from '../state/lists/hooks'
@@ -18,12 +18,13 @@ export function isAddress(value: any): string | false {
 }
 
 const ETHERSCAN_PREFIXES: { [chainId in ChainId]: string } = {
-  1: '',
-  3: 'ropsten.',
-  4: 'rinkeby.',
-  5: 'goerli.',
-  42: 'kovan.'
-  ,21004: 'c4ei.'
+  // 1: '',
+  // 3: 'ropsten.',
+  // 4: 'rinkeby.',
+  // 5: 'goerli.',
+  // 42: 'kovan.'
+  // ,
+  21004: 'c4ei.'
   // ,8217: 'klay.'
 }
 

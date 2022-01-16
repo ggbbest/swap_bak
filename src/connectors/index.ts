@@ -11,7 +11,8 @@ const NETWORK_URL = process.env.REACT_APP_NETWORK_URL
 const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY
 const PORTIS_ID = process.env.REACT_APP_PORTIS_ID
 
-export const NETWORK_CHAIN_ID: number = parseInt(process.env.REACT_APP_CHAIN_ID ?? '1')
+// export const NETWORK_CHAIN_ID: number = parseInt(process.env.REACT_APP_CHAIN_ID ?? '1')
+export const NETWORK_CHAIN_ID: number = parseInt(process.env.REACT_APP_CHAIN_ID ?? '21004')
 
 if (typeof NETWORK_URL === 'undefined') {
   throw new Error(`REACT_APP_NETWORK_URL must be a defined environment variable`)
@@ -40,14 +41,15 @@ export const walletconnect = new WalletConnectConnector({
 // mainnet only
 export const fortmatic = new FortmaticConnector({
   apiKey: FORMATIC_KEY ?? '',
-  chainId: 1
-  // chainId: 21004
+  // chainId: 1
+  chainId: 21004
 })
 
 // mainnet only
 export const portis = new PortisConnector({
   dAppId: PORTIS_ID ?? '',
-  networks: [1]
+  // networks: [1]
+  networks: [21004]
 })
 
 // mainnet only

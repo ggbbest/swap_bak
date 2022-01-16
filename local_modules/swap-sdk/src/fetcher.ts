@@ -9,7 +9,8 @@ import { ChainId } from './constants'
 import { Token } from './entities/token'
 
 let TOKEN_DECIMALS_CACHE: { [chainId: number]: { [address: string]: number } } = {
-  [ChainId.MAINNET]: { '0x380e5cdE38c35b184fe4B2cDB56EA4889CaE1Cb1': 9  /*DGD*/ }
+  // [ChainId.MAINNET]: { '0x380e5cdE38c35b184fe4B2cDB56EA4889CaE1Cb1': 9  /*DGD*/ }
+  [ChainId.C4EI]: { '0x380e5cdE38c35b184fe4B2cDB56EA4889CaE1Cb1': 9  /*DGD*/ }
 }
 
 /**

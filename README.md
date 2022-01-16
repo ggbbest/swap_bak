@@ -18,7 +18,7 @@ Please update the .env file to ensure full functionality.
 
 ```bash
 cd local_modules
-cd swap_sdk
+cd swap-sdk/
 yarn
 yarn build
 ```

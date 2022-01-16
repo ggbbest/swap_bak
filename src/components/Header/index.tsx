@@ -108,11 +108,11 @@ const BalanceText = styled(Text)`
 `
 
 const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
-  [ChainId.MAINNET]: null,
-  [ChainId.RINKEBY]: 'Rinkeby',
-  [ChainId.ROPSTEN]: 'Ropsten',
-  [ChainId.GÖRLI]: 'Görli',
-  [ChainId.KOVAN]: 'Kovan',
+  // [ChainId.MAINNET]: null,
+  // [ChainId.RINKEBY]: 'Rinkeby',
+  // [ChainId.ROPSTEN]: 'Ropsten',
+  // [ChainId.GÖRLI]: 'Görli',
+  // [ChainId.KOVAN]: 'Kovan',
   [ChainId.C4EI]: 'c4ei'
 }
 

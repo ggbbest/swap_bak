@@ -15,11 +15,11 @@ export const MKR = new Token(ChainId.MAINNET, '0x9f8F72aA9304c8B593d555F12eF6589
 export const AMPL = new Token(ChainId.MAINNET, '0xD46bA6D942050d489DBd938a2C909A5d5039A161', 9, 'AMPL', 'Ampleforth')
 
 const WETH_ONLY: ChainTokenList = {
-  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
-  [ChainId.ROPSTEN]: [WETH[ChainId.ROPSTEN]],
-  [ChainId.RINKEBY]: [WETH[ChainId.RINKEBY]],
-  [ChainId.GÖRLI]: [WETH[ChainId.GÖRLI]],
-  [ChainId.KOVAN]: [WETH[ChainId.KOVAN]],
+  // [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
+  // [ChainId.ROPSTEN]: [WETH[ChainId.ROPSTEN]],
+  // [ChainId.RINKEBY]: [WETH[ChainId.RINKEBY]],
+  // [ChainId.GÖRLI]: [WETH[ChainId.GÖRLI]],
+  // [ChainId.KOVAN]: [WETH[ChainId.KOVAN]],
   [ChainId.C4EI]: [WETH[ChainId.C4EI]]
 }
 // used to construct intermediary pairs for trading

@@ -1,4 +1,4 @@
-import { Token, ChainId } from 'swap-sdk'
+import { Token, ChainId } from '../../local_modules/swap-sdk'
 
 export const C4EI_ADDRESS = process.env.REACT_APP_C4EI_TOKEN_ADDRESS
 if (typeof C4EI_ADDRESS === 'undefined') throw new Error('C4EI address is not configured')
