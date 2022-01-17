@@ -1,4 +1,4 @@
-import { Currency, Pair } from 'swap-sdk'
+import { Currency, Pair } from '../../../local_modules/swap-sdk'
 import React, { useState, useContext, useCallback } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import { darken } from 'polished'

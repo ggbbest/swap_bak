@@ -1,4 +1,4 @@
-import { Token, ChainId } from 'swap-sdk'
+import { Token, ChainId } from '../../local_modules/swap-sdk'
 
 export const CRO_ADDRESS = process.env.REACT_APP_CRO_TOKEN_ADDRESS
 if (typeof CRO_ADDRESS === 'undefined') throw new Error('CRO address is not configured')

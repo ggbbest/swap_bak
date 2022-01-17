@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from 'swap-sdk'
+import { Currency, ETHER, Token } from '../../../local_modules/swap-sdk'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 

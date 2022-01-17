@@ -18,15 +18,17 @@ callData: "0x06f2bf6200000000000000000000000058a3f3237ac6dd279702f2ec02c36ab536f
 
 0x031e26c2b02a114827e4bc3122474366b5e1897a8637e5aecbaf418e1ebdcfbd
 ############################################################
-###### ROUTER ? 
-> transaction hash:    0x58877b236703b30a42ba3f038b0a87d1a46924035adbe4d1c5ff6f785d250a36
-> contract address:    0x395A3BE5A29e45f534d24C796dDd2F98eE1aE197
-Arg [0] : _factory (address): 0x9deb29c9a4c7a88a3c0257393b7f3335338d9a9d --> 0x0baEE3029DEBFcF63aE172460ECDeCdF72FcC047
-Arg [1] : _WETH (address): 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2  --> 0xE94b78D58826eca66a921cEc0E3Bc40BC6707897
 ###### FACTORY 
 "address": "0x0baEE3029DEBFcF63aE172460ECDeCdF72FcC047",
 "transactionHash": "0x031e26c2b02a114827e4bc3122474366b5e1897a8637e5aecbaf418e1ebdcfbd"
 ############################################################
+
+###### ROUTER ? 
+> transaction hash:    0x8a4ec716e985fdef44b0ae3b1d4a6bb603bf887370c71a15285fccedb9aa5202
+> contract address:    0x395A3BE5A29e45f534d24C796dDd2F98eE1aE197  --> 0x96E778B2D78A954e271578eC4Ffa8dfc1Cd7d8e0
+Arg [0] : _factory (address): 0x9deb29c9a4c7a88a3c0257393b7f3335338d9a9d --> 0x0baEE3029DEBFcF63aE172460ECDeCdF72FcC047
+Arg [1] : _WETH (address): 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2  --> 0xc3B12E8d7FAa4e98001D97a2BC7342B9A959a159
+
 react_devtools_backend.js:4045 
 Warning: 0x58a3f3237ac6dd279702f2ec02c36ab536ff08e1 is not checksummed.
 Warning: 0x1d187bbecef8d7b1731339c301ab8354d4f0a50b is not checksummed

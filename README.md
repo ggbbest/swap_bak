@@ -73,13 +73,13 @@ REACT_APP_CHAIN_ID = "21004"
 
 
 /home/dev/www/swap_sol_project/2_swap-contracts-periphery/readme.txt
-   > transaction hash:    0x58877b236703b30a42ba3f038b0a87d1a46924035adbe4d1c5ff6f785d250a36
+   > transaction hash:    0x8a4ec716e985fdef44b0ae3b1d4a6bb603bf887370c71a15285fccedb9aa5202
    > contract address:    0x395A3BE5A29e45f534d24C796dDd2F98eE1aE197
    > block number:        426209
 
 CroDefiSwapRouter02 deployed on development with 
 factoryAddress 0x0baEE3029DEBFcF63aE172460ECDeCdF72FcC047
-wethAddress 0xE94b78D58826eca66a921cEc0E3Bc40BC6707897
+wethAddress 0xE94b78D58826eca66a921cEc0E3Bc40BC6707897  --> 0xc3B12E8d7FAa4e98001D97a2BC7342B9A959a159  (2022-01-17)
 
 
 
@@ -111,3 +111,8 @@ CustomizedBridge
 => {liquidityToken: Token;tokens: [Token, Token];}[], deps: 
    React.DependencyList | undefined): {liquidityToken: Token;tokens: [Token, Token];}[]
 import useMemo
+
+
+
+/home/dev/www/swap.c4ei.net/src/hooks/useFetchListCallback.ts
+return resolveENSContentHash(ensName, networkLibrary)

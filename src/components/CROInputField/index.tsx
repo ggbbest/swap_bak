@@ -1,4 +1,4 @@
-import { Currency, Pair } from 'swap-sdk'
+import { Currency, Pair } from '../../../local_modules/swap-sdk'
 import { darken } from 'polished'
 import React, { useContext } from 'react'
 import { useTranslation } from 'react-i18next'

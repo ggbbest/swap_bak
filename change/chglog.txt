@@ -9,3 +9,9 @@ cp -r /home/dev/www/swap.c4ei.net/change/@web3-react /home/dev/www/swap.c4ei.net
 
 cd /home/dev/www/swap.c4ei.net/local_modules/swap-sdk
 yarn build
+
+
+o[Symbol.iterator]
+
+cp -r /home/dev/www/swap.c4ei.net/node_modules/@uniswap /home/dev/www/swap.c4ei.net/change/@uniswap
+

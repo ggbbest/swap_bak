@@ -60,7 +60,7 @@ const BoostTab = () => {
             onUserInput={onUserInput}
             onMax={() => setStakeAmount(maxAmount?.toSignificant(6).toString() || '0')}
             id="stake-currency-input"
-            currencyLogoUrl="https://swap.c4ei.net/price/coin-data/icon/CERU/color_icon.png"
+            currencyLogoUrl="https://c4ei.net/CERU-icon.png"
           />
 
           <Select

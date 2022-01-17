@@ -1,5 +1,5 @@
 import { AbstractConnector } from '@web3-react/abstract-connector'
-import { ChainId, JSBI, Percent, Token, WETH } from 'swap-sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from '../../local_modules/swap-sdk'
 import { injected, walletconnect } from '../connectors'
 
 // a list of tokens by chain
@@ -15,7 +15,7 @@ export const MKR = new Token(ChainId.MAINNET, '0x9f8F72aA9304c8B593d555F12eF6589
 export const AMPL = new Token(ChainId.MAINNET, '0xD46bA6D942050d489DBd938a2C909A5d5039A161', 9, 'AMPL', 'Ampleforth')
 
 const WETH_ONLY: ChainTokenList = {
-  // [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
+  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
   // [ChainId.ROPSTEN]: [WETH[ChainId.ROPSTEN]],
   // [ChainId.RINKEBY]: [WETH[ChainId.RINKEBY]],
   // [ChainId.GÖRLI]: [WETH[ChainId.GÖRLI]],
