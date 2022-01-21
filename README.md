@@ -15,6 +15,8 @@ Please see the [swap-token-list](https://github.com/crypto-com/swap-token-list) 
 Please update the .env file to ensure full functionality.
 
 ### Build local modules
+/home/dev/www/swap.c4ei.net/.env
+/home/dev/www/swap.c4ei.net/local_modules/swap-sdk/.env
 
 ```bash
 cd local_modules/swap-sdk/
